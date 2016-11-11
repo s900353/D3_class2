@@ -15,7 +15,7 @@ d3.csv("./HistoricalQuotes.csv",
 	{
 		var ln = data.length;
 		console.log(data);
-		var maxy = d3.max(data,close );
+		var maxy = d3.max(data.close );
 		var lines = d3.line().x(function(d,i){return i*(width/ln);}).y(function(d){return height-d.close*(height/maxy)});
 		ctrl.append("path").attr("d", function(d){
 			return "M0,"+height+"L"+width+","+height;
