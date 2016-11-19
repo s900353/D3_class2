@@ -25,7 +25,7 @@ d3.csv("./practice.csv",
 		}).attr("stroke", "black").attr("fill", "none");
 		ctrl.append("path").data([data]).attr("d", lines).attr("stroke", "red").attr("fill", "none");
 		
-	}
+	
 var x = d3.scaleLinear().range([0, width]);
     	var y = d3.scaleLinear().range([height, 0]);  
     	x.domain(d3.extent(data, function(d){return d.YEAR}) );
