@@ -26,7 +26,8 @@ d3.csv("./practice.csv",
 		ctrl.append("path").data([data]).attr("d", lines).attr("stroke", "red").attr("fill", "none");
 		
 	}
-
+	var x = d3.scaleTime().range([0, width]);
+var y = d3.scaleLinear().range([height, 0]);
 );
 </script>
 </body>
